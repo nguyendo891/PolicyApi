@@ -1,0 +1,16 @@
+<a style="cursor: pointer;"
+    [routerLink]="[index]"
+    class="list-group-item clearfix" 
+    routerLinkActive="active">
+    <div class="pull-left">
+        <h4 class="list-group-item-heading">{{policy.name}}</h4>
+        <p class="list-group-item-text">{{policy.description}}</p>
+    </div>
+    <span class="pull-right">
+        <img 
+            [src]= "policy.imagePath"
+            alt="{{policy.name}}" 
+            class="img-responsive" 
+            style="max-height: 50px;">
+    </span>
+</a>

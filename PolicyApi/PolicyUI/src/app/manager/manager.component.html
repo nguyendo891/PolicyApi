@@ -1,0 +1,14 @@
+<table>
+            <tr>
+                    <th>Username</th>
+                    <th>Roles</th>
+                    <th>Policy Name</th>
+            </tr>
+
+            <tr *ngFor="let account of accounts"> 
+                <td>{{account.username}}</td>
+                <td>{{account.role}}</td>
+                <td *ngFor="let policy of account.policies">{{policy.name}}</td>
+            </tr>
+
+</table>

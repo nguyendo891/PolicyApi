@@ -1,0 +1,19 @@
+
+<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-sucess" (click)="onNewPolicy()">New Policy</button>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-xs-12">
+        <app-policy-item *ngFor="let policyEl of policies; let i = index"
+                         [policy]="policyEl"
+                         [index]="i">
+        </app-policy-item>
+    </div>
+    <div class="col-xs-12" *ngIf="isEnabled">
+      {{text}}
+    </div>
+</div>
+
